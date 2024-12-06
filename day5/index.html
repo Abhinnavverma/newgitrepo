@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://abes.ac.in">ABES Website</a>
+    <button onclick="display()">Change Link</button>
+    <script>
+        let p1=document.querySelector('a');
+        let b=true;
+        let display=()=>{
+            if(b){
+            p1.setAttribute('href','https://aktu.ac.in');
+            p1.innerText="Aktu Website";
+            b=false;
+            }
+            else{
+            p1.setAttribute('href','https://abes.ac.in');
+            p1.innerText="Abes Website";
+            b=true;
+            }
+        }
+    </script>
+</body>
+</html>
